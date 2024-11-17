@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'hussarszturm';
+    src: url('fonts/hussarszturmoblique-qwxq-webfont.woff2') format('woff2'),
+         url('fonts/hussarszturmoblique-qwxq-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    background-color: rebeccapurple;
+    background-color: #B40614;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: hussarszturm, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
