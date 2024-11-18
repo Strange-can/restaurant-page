@@ -22,6 +22,7 @@ const home = ( function () {
     imgCredit.setAttribute("id", "img-credit")
 
     let createHome = () => {
+        content.textContent = ''
         content.appendChild(brand)
         content.appendChild(saleLine)
         content.appendChild(homeImage)
@@ -30,6 +31,6 @@ const home = ( function () {
     return { createHome }
 })()
 
-home.createHome()
+//home.createHome()
 
 export { home }
