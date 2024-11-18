@@ -30,7 +30,6 @@ const home = ( function () {
     return { createHome }
 })()
 
-const homeButton = document.getElementById("home")
-homeButton.addEventListener("click", home.createHome)
-
 home.createHome()
+
+export { home }
