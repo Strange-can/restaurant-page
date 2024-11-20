@@ -2,6 +2,7 @@ import imageSrc1 from "./margherita-pizza-odin.jpg"
 import imageSrc2 from "./pepperoni-pizza-odin.jpg"
 import imageSrc3 from "./veggie-supreme-pizza-odin.jpg"
 
+const menu = ( function () {
 //#content div container
 const content = document.getElementById("content")
 
@@ -10,7 +11,6 @@ const content = document.getElementById("content")
 const menuTitle = document.createElement("p")
 menuTitle.setAttribute("id", "menu-title")
 menuTitle.textContent = 'MENU'
-content.appendChild(menuTitle)
 
 //container to hold img and texts
 const option1 = document.createElement("div")
@@ -36,8 +36,6 @@ const image1 = document.createElement("img")
 image1.src = imageSrc1
 option1.prepend(image1)
 
-content.append(option1)
-
 //container to hold img and texts
 const option2 = document.createElement("div")
 option2.classList.add("option")
@@ -61,8 +59,6 @@ option2.append(optionText2)
 const image2 = document.createElement("img")
 image2.src = imageSrc2
 option2.prepend(image2)
-
-content.append(option2)
 
 //container to hold img and texts
 const option3 = document.createElement("div")
@@ -88,11 +84,21 @@ const image3 = document.createElement("img")
 image3.src = imageSrc3
 option3.prepend(image3)
 
-content.append(option3)
-
 //call to action statement
 const callToAction = document.createElement("p")
 callToAction.setAttribute("id", "call-to-action")
 callToAction.textContent = 'Ready to Order? Call 1-800-123-4567 now to place your order!'
 
-content.append(callToAction)
+    let createMenu = () => {
+        content.textContent = ''
+        content.appendChild(menuTitle)
+        content.append(option1)
+        content.append(option2)
+        content.append(option3)
+        content.append(callToAction)
+    }
+
+    return { createMenu }
+})()
+
+export { menu }
