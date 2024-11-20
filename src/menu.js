@@ -5,7 +5,8 @@ import imageSrc3 from "./veggie-supreme-pizza-odin.jpg"
 //#content div container
 const content = document.getElementById("content")
 
-//child elements
+//child elements:
+//menu heading
 const menuTitle = document.createElement("p")
 menuTitle.setAttribute("id", "menu-title")
 menuTitle.textContent = 'MENU'
@@ -13,12 +14,11 @@ content.appendChild(menuTitle)
 
 //container to hold img and texts
 const option1 = document.createElement("div")
-option1.setAttribute("id", "option1")
 option1.classList.add("option")
 //container to hold text elements
 const optionText1 = document.createElement("div")
 optionText1.classList.add("option-text")
-//text elements in optionText
+//text elements in optionText1
 const pizzaName1 = document.createElement("p")
 pizzaName1.setAttribute("id", "pizza-name")
 pizzaName1.textContent = 'Margherita Pizza'
@@ -38,12 +38,61 @@ option1.prepend(image1)
 
 content.append(option1)
 
-const option2 = document.getElementById("option2")
+//container to hold img and texts
+const option2 = document.createElement("div")
+option2.classList.add("option")
+//container to hold text elements
+const optionText2 = document.createElement("div")
+optionText2.classList.add("option-text")
+//text elements in optionText1
+const pizzaName2 = document.createElement("p")
+pizzaName2.setAttribute("id", "pizza-name")
+pizzaName2.textContent = 'Pepperoni Pizza'
+
+const desc2 = document.createElement("p")
+desc2.textContent = 'Loaded with pepperoni, mozzarella, and a savory tomato sauce.'
+
+const price2 = document.createElement("p")
+price2.textContent = 'Price: $14.99'
+
+optionText2.append(pizzaName2, desc2, price2)
+option2.append(optionText2)
+
 const image2 = document.createElement("img")
 image2.src = imageSrc2
 option2.prepend(image2)
 
-const option3 = document.getElementById("option3")
+content.append(option2)
+
+//container to hold img and texts
+const option3 = document.createElement("div")
+option3.classList.add("option")
+//container to hold text elements
+const optionText3 = document.createElement("div")
+optionText3.classList.add("option-text")
+//text elements in optionText1
+const pizzaName3 = document.createElement("p")
+pizzaName3.setAttribute("id", "pizza-name")
+pizzaName3.textContent = 'Veggie Pizza'
+
+const desc3 = document.createElement("p")
+desc3.textContent = 'Topped with onions, olives, mushrooms, and brocolli.'
+
+const price3 = document.createElement("p")
+price3.textContent = 'Price: $13.99'
+
+optionText3.append(pizzaName3, desc3, price3)
+option3.append(optionText3)
+
 const image3 = document.createElement("img")
 image3.src = imageSrc3
 option3.prepend(image3)
+
+content.append(option3)
+
+//call to action statement
+const callToAction = document.createElement("p")
+callToAction.setAttribute("id", "call-to-action")
+callToAction.textContent = 'Ready to Order? Call 1-800-123-4567 now to place your order!'
+
+content.append(callToAction)
