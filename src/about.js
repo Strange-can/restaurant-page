@@ -112,6 +112,13 @@ const about = ( function () {
         content.textContent = ''
         content.append(aboutTitle)
         content.append(aboutBox)
+        //change button bg color to indicate current page
+        const homeButton = document.getElementById("home")
+        homeButton.style.backgroundColor = "#B40614"
+        const menuButton = document.getElementById("menu")
+        menuButton.style.backgroundColor = "#B40614"
+        const aboutButton = document.getElementById("about")
+        aboutButton.style.backgroundColor = "#d51c3f"
     }
 
     return { createAbout }

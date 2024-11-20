@@ -27,10 +27,15 @@ const home = ( function () {
         content.appendChild(saleLine)
         content.appendChild(homeImage)
         content.appendChild(imgCredit)
+        //change button bg color to indicate current page
+        const homeButton = document.getElementById("home")
+        homeButton.style.backgroundColor = "#d51c3f"
+        const menuButton = document.getElementById("menu")
+        menuButton.style.backgroundColor = "#B40614"
+        const aboutButton = document.getElementById("about")
+        aboutButton.style.backgroundColor = "#B40614"
     }
     return { createHome }
 })()
-
-//home.createHome()
 
 export { home }
