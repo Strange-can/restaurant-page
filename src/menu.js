@@ -84,6 +84,10 @@ const image3 = document.createElement("img")
 image3.src = imageSrc3
 option3.prepend(image3)
 
+const imgCredit = document.createElement("p")
+imgCredit.setAttribute("id", "img-credit")
+imgCredit.textContent = 'All images from freepik'
+
 //call to action statement
 const callToAction = document.createElement("p")
 callToAction.setAttribute("id", "call-to-action")
@@ -95,6 +99,7 @@ callToAction.textContent = 'Ready to Order? Call 1-800-123-4567 now to place you
         content.append(option1)
         content.append(option2)
         content.append(option3)
+        content.append(imgCredit)
         content.append(callToAction)
     }
 
