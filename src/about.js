@@ -115,10 +115,13 @@ const about = ( function () {
         //change button bg color to indicate current page
         const homeButton = document.getElementById("home")
         homeButton.style.backgroundColor = "#B40614"
+        homeButton.style.borderColor = "aliceblue"
         const menuButton = document.getElementById("menu")
         menuButton.style.backgroundColor = "#B40614"
+        menuButton.style.borderColor = "aliceblue"
         const aboutButton = document.getElementById("about")
         aboutButton.style.backgroundColor = "#d51c3f"
+        aboutButton.style.borderColor = "red"
     }
 
     return { createAbout }

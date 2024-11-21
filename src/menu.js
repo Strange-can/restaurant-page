@@ -104,10 +104,13 @@ callToAction.textContent = 'Ready to Order? Call 1-800-123-4567 now to place you
         //change button bg color to indicate current page
         const homeButton = document.getElementById("home")
         homeButton.style.backgroundColor = "#B40614"
+        homeButton.style.borderColor = "aliceblue"
         const menuButton = document.getElementById("menu")
         menuButton.style.backgroundColor = "#d51c3f"
+        menuButton.style.borderColor = "red"
         const aboutButton = document.getElementById("about")
         aboutButton.style.backgroundColor = "#B40614"
+        aboutButton.style.borderColor = "aliceblue"
     }
 
     return { createMenu }

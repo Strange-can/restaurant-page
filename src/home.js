@@ -30,10 +30,13 @@ const home = ( function () {
         //change button bg color to indicate current page
         const homeButton = document.getElementById("home")
         homeButton.style.backgroundColor = "#d51c3f"
+        homeButton.style.borderColor = "red"
         const menuButton = document.getElementById("menu")
         menuButton.style.backgroundColor = "#B40614"
+        menuButton.style.borderColor = "aliceblue"
         const aboutButton = document.getElementById("about")
         aboutButton.style.backgroundColor = "#B40614"
+        aboutButton.style.borderColor = "aliceblue"
     }
     return { createHome }
 })()
